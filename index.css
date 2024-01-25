@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+}
+
+.music-card {
+  width: 450px;
+  background-color: #fff;
+  color: hsl(224, 23%, 55%);
+  border-radius: 25px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.music-card-image {
+  width: 100%;
+}
+.music-card-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+.music-card-summary P {
+  font-size: 18px;
+}
+.music-card-summary > * {
+  margin: 12px 0;
+}
+.music-card-summary > h2 {
+  color: hsl(223, 47%, 23%);
+}
+.music-card-summary-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 25px;
+  border-radius: 14px;
+  background-color: hsl(225, 100%, 98%);
+  font-size: 16px;
+  gap: 2rem;
+}
+.music-card-summary-plan-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 75px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.music-card-summary-plan-desc > strong {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.music-card-summary-plan a {
+  color: hsl(245, 75%, 52%);
+  font-size: 13px;
+  font-weight: 700;
+}
+.music-card-summary-plan a:hover {
+  color: hsl(244, 83%, 68%);
+  text-decoration: none;
+}
+.music-card-summary-actions {
+  width: 100%;
+}
+.music-card-summary-actions > button {
+  border: none;
+  border-radius: 10px;
+  width: inherit;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+.music-card-summary-actions-confirm {
+  box-shadow: 0 20px 15px -8px rgb(197, 189, 245);
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-size: 16px;
+}
+.music-card-summary-actions-confirm:hover {
+  background-color: hsl(244, 83%, 68%);
+}
+.music-card-summary-actions-cancel {
+  margin-top: 22px;
+  background: #fff;
+  color: hsl(224, 23%, 55%);
+}
+.music-card-summary-actions-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 500px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 98%);
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,135 @@
+$primary-pale-blue: hsl(225, 100%, 94%);
+$primary-bright-blue: hsl(245, 75%, 52%);
+$primary-bright-blue-hover: hsl(244, 83%, 68%);
+$neutral-pale-blue: hsl(225, 100%, 98%);
+$neutral-desaturated-blue: hsl(224, 23%, 55%);
+$neutral-dark-blue: hsl(223, 47%, 23%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: $primary-pale-blue;
+  font-size: 16px;
+}
+
+.music-card {
+  width: 450px;
+  background-color: #fff;
+  color: $neutral-desaturated-blue;
+  border-radius: 25px;
+  margin: 50px auto;
+  overflow: hidden;
+
+  &-image {
+    width: 100%;
+  }
+
+  &-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+
+    P {
+        font-size: 18px;
+    }
+
+    & > * {
+      margin: 12px 0;
+    }
+
+    & > h2 {
+      color: $neutral-dark-blue;
+    }
+
+    &-plan {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 25px;
+      border-radius: 14px;
+      background-color: $neutral-pale-blue;
+      font-size: 16px;
+      gap: 2rem;
+
+      &-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 75px;
+        line-height: 20px;
+        font-size: 14px;
+
+        & > strong {
+          color: $neutral-dark-blue;
+          font-weight: 700;
+        }
+      }
+      a {
+        color: $primary-bright-blue;
+        font-size: 13px;
+        font-weight: 700;
+
+        &:hover {
+            color: $primary-bright-blue-hover;
+            text-decoration: none;
+        }
+      }
+    }
+
+    &-actions {
+      width: 100%;
+
+      & > button {
+        border: none;
+        border-radius: 10px;
+        width: inherit;
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      &-confirm {
+        box-shadow: 0 20px 15px -8px rgb(197 189 245);
+        background-color: $primary-bright-blue;
+        color: #fff;
+        font-size: 16px;
+
+        &:hover {
+          background-color: $primary-bright-blue-hover;
+        }
+      }
+
+      &-cancel {
+        margin-top: 22px;
+        background: #fff;
+        color: $neutral-desaturated-blue;
+
+        &:hover {
+            color: $neutral-dark-blue
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $neutral-pale-blue;
+    }
+}
